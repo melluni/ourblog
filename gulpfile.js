@@ -56,11 +56,12 @@ gulp.task('sass', function () {
 
 gulp.task('template', function () {
     gulp.src('./pages/**/*.tmpl.html')
-        .pipe(rigger())
+        .pipe(rigger().on('error', gutil.log))
+        .on('error', notify.onError())
         .pipe(rename(function (path) {
             path.basename = path.basename.split('.')[0];
             path.extname = ".html"
-        }))
+        }).on('error', gutil.log))
         .pipe(gulp.dest('pages/'))
 });
 
