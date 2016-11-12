@@ -5,8 +5,9 @@
 @import "_icon.scss";
 
 @import "_layout.scss";
-@import "blocks/_index.scss";
-@import "blocks/_preview.scss";
+// @import "blocks/_index.scss";
+@import "blocks/_preview.sass";
+@import "blocks/filter.sass";
 @import "blocks/_movie-list.sass";
 
 @import "components/_button.scss";
