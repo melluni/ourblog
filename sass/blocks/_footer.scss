@@ -1,29 +1,86 @@
-.footer {
-	height: 146px;
-	background-color: #353564;
-	
-	
+footer {
+  background: #353564;
+  height: 145px;
+  line-height: 145px;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
-.footer-text {
-	color: #cccccc;
-	font-size: 15px;
-	text-align: left;
-	padding: 60px;
-	max-width: 300px;
-	float: left;
-	
+.footer_text {
+  color: #cccccc;
+  font-size: 15px;
+  float: left;
 }
 
-.footer-logo-list {
-	text-align: right;
-	padding: 50px;
+.footer_icons {
+  float: right;
+  margin: 0;
+  margin-right: -10px;
 }
 
-.footer-logo-item {
-	list-style: none;
-	display: inline-block;
-	padding: 0 5px;
-	
+.footer_icon {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.icon_rss {
+  background: url(images/icon-rss.png) no-repeat center center;
+  background-color: #ffa820;
+}
+
+.icon_twitter {
+  background: url(images/icon-twitter.png) no-repeat center center;
+  background-color: #ffa820;
+}
+
+.icon_facebook {
+  background: url(images/icon-facebook.png) no-repeat center center;
+  background-color: #ffa820;
+}
+
+.footer_text {
+  margin: 0;
+}
+
+@media screen and (max-width: 1169px) {
+  .footer_container {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .footer_icons {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-right: 0;
+  }
+  .footer_text {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  footer {
+    height: 200px;
+    line-height: 100px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer_text {
+    font-size: 13px;
+    margin-top: 20px;
+    line-height: 20px;
+  }
+}
+
+.footer_icon img {
+  vertical-align: middle;
 }
 
