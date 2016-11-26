@@ -1,14 +1,20 @@
 .movie-list
-	padding: 0 15px
 	font-size: 0
+	margin: 0 -15px
+	text-align: center
 
 .movie-item
 	width: 22.5%
-	padding: 0 1.25%
+	padding: 1.25%
 	display: inline-block
 	color: #25254e
 	font-size: 20px
 	font-family: $base-font
+	vertical-align: top
+	@include tablet
+		width: 30.8%
+	@include mobile
+		width: 47.5%
 
 
 .movie-img 
@@ -16,6 +22,59 @@
 	padding-top: 100%
 	background-size: contain
 	background-position: 50%
+	position: relative
+	.tag
+		display: none
+		font-size: 13px
+	@include desktop
+		.fa-icon
+			width: 40px
+			height: 40px
+			line-height: 40px
+			margin: 30% auto 5%
+		.tags
+			color: #ccc 
+		&:hover .tag
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			margin: auto
+		&:hover:before
+		    position: absolute
+		    top: 0
+		    right: 0
+		    bottom: 0
+		    left: 0
+		    content: ''
+		    background-color: $primary-color
+		    opacity: 0.8;
+	@include desktop-large
+		.fa-icon
+			width: 40px
+			height: 40px
+			line-height: 40px
+			margin: 30% auto 5%
+		.tags
+			color: #ccc 
+		&:hover .tag
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			margin: auto
+		&:hover:before
+		    position: absolute
+		    top: 0
+		    right: 0
+		    bottom: 0
+		    left: 0
+		    content: ''
+		    background-color: $primary-color
+		    opacity: 0.8;
+		
 
 .movie-item--lucy
 	.movie-img
@@ -34,28 +93,28 @@
 		background-image: url(../images/movie-img--hunger-games.png) 
 	
 .movie-title
-	margin-top: 23px
+	margin-top: 14px
+	line-height: 29px
+	text-overflow: ellipsis
+	overflow: hidden
+	white-space: nowrap
+	text-align: left
 
 .movie-rating
 	unicode-bidi: bidi-override
 	direction: rtl
-	line-height: 29px
-	margin-bottom: 8px
+	line-height: 20px
+	margin-bottom: 13px
+	text-align: left
   	
-	> span
+	> .fa
 		display: inline-block
 		position: relative
 		font-size: 13px
 		color: #CCC 
 	  	
 		&:hover
-			&:before, ~ span:before 
-				content: "\2605"
-				position: absolute
-				top: 0
-				left: 0
-				bottom: 0
-				right: 0
+			&:before, ~ .fa:before 
 				color: $accent-color 
 
 .movie-info
@@ -80,6 +139,9 @@
 	float: right
 	text-align: right
 	margin-right: -2.5px
+	text-overflow: ellipsis
+	overflow: hidden
+	white-space: nowrap
 	
 .movie-quality--item
 	font-size: 12px
@@ -87,11 +149,7 @@
 	padding: 10px 6px
 	background-color: $accent-color--secondary 
 	display: inline-block
-	color: #FFF  
-	-ms-text-overflow: ellipsis
-	text-overflow: ellipsis
-	overflow: hidden
-	white-space: nowrap
+	color: #FFF
 	
 .movie-buy
 	background-color: $accent-color
@@ -99,3 +157,7 @@
 	text-align: center
 	padding: 18px
 	margin-top: 24px
+	cursor: pointer
+	.fa
+		padding-right: 13px
+	

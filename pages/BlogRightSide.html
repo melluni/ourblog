@@ -2,56 +2,304 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700i" rel="stylesheet">
 </head>
 <body>
 
-<!-- //= ../templates/blocks/blog-header.html -->
-<section class="blog-post">
-	<!-- //= ../templates/blocks/post-with-img.html -->
-	<!-- //= ../templates/blocks/post-text.html -->
-	<!-- //= ../templates/blocks/post-video.html -->
-	<!-- //= ../templates/blocks/post-audio.html -->
-	<!-- //= ../templates/blocks/post-slider.html -->
-</section>
-<!-- //= ../templates/page-numeration.html -->
-<section class="sidebar">
-	<!-- //= ../templates/search.html -->
-	<!-- //= ../templates/pcategories.html -->
-	<!-- //= ../templates/popular-posts.html -->
-	<!-- //= ../templates/advertisment.html -->
-	<!-- //= ../templates/tags.html -->
-	<!-- //= ../templates/social-media.html -->
-	<!-- //= ../templates/subscribe.html -->
-</section>
+<header class="header">
+			<div class="container clearfix">
+				<div class="logo">
+					<figure class="logo-img">
+					</figure>
+				</div>
+				<nav class="menu">
+						<a href="#home" class="menu-item">
+							Home
+						</a>
+						<a href="#browse_movies" class="menu-item">
+							Browse movies
+						</a>
+						<a href="#blog" class="menu-item">
+							Blog
+						</a>
+						<a href="#about" class="menu-item">
+							About
+						</a>
+						<a href="#contact" class="menu-item">
+							Contact
+						</a>
+						<a class="fa-icon menu-item">
+							<span>Search</span>
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</a>
+				</nav>
+			</div>
+</header>
+
+
+<div class='blog-header'>
+	<div class="container">
+		<h2>Our blog, That’s our latest News</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<div class="buttons-group">
+			<a href="/pages/home.html" class='button'>Back to home</a>
+			<a href="#" class='button'>Search for what you need</a>
+		</div>
+	</div>
+</div>
+
+<div class="blog-right-side container">
+	<div class="row">
+		<section class="blog-posts">
+		<div class="blog-post">
+			<h3 class='post-title'>Standard blog post with image</h3>
+			<ul class="general-info">
+				<li>	
+					<i class='fa fa-pencil'></i>
+					<span>Ahmed Nasser</span>
+				</li>
+				<li>
+					<i class='fa fa-clock-o'></i>
+					<span>15 May 2015</span>
+				</li>
+				<li>
+					<i class='fa fa-tags'></i>
+					<span>movies, best</span>
+				</li>
+			</ul>
+			<img src="/images/post-img.jpg" alt="Post Image">
+			<p class='text-info'>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+			</p>
+			<div class="read-more-block">
+				<button type='button'>Read More</button>
+			</div>
+		</div>
+		<div class="blog-post">
+			<h3 class='post-title'>Text blog post</h3>
+			<ul class="general-info">
+				<li>	
+					<i class='fa fa-pencil'></i>
+					<span>Ahmed Nasser</span>
+				</li>
+				<li>
+					<i class='fa fa-clock-o'></i>
+					<span>15 May 2015</span>
+				</li>
+				<li>
+					<i class='fa fa-tags'></i>
+					<span>movies, best</span>
+				</li>
+			</ul>
+			<p class='text-info'>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+			</p>
+			<div class="read-more-block">
+				<button type='button'>Read More</button>
+			</div>
+		</div>
+		<div class="blog-post">
+			<h3 class='post-title'>Vimeo video blog post</h3>
+			<ul class="general-info">
+				<li>	
+					<i class='fa fa-pencil'></i>
+					<span>Ahmed Nasser</span>
+				</li>
+				<li>
+					<i class='fa fa-clock-o'></i>
+					<span>15 May 2015</span>
+				</li>
+				<li>
+					<i class='fa fa-tags'></i>
+					<span>movies, best</span>
+				</li>
+			</ul>
+			<iframe src="https://player.vimeo.com/video/192088415" width="100%" height="490" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<p class='text-info'>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+			</p>
+			<div class="read-more-block">
+				<button type='button'>Read More</button>
+			</div>
+		</div>
+		<div class="blog-post">
+			<h3 class='post-title'>Audio blog post</h3>
+			<ul class="general-info">
+				<li>	
+					<i class='fa fa-pencil'></i>
+					<span>Ahmed Nasser</span>
+				</li>
+				<li>
+					<i class='fa fa-clock-o'></i>
+					<span>15 May 2015</span>
+				</li>
+				<li>
+					<i class='fa fa-tags'></i>
+					<span>movies, best</span>
+				</li>
+			</ul>
+			<p class='text-info'>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+			</p>
+			<div class="read-more-block">
+				<button type='button'>Read More</button>
+			</div>
+		</div>
+		<div class="blog-post">
+			<h3 class='post-title'>Slider blog post</h3>
+			<ul class="general-info">
+				<li>	
+					<i class='fa fa-pencil'></i>
+					<span>Ahmed Nasser</span>
+				</li>
+				<li>
+					<i class='fa fa-clock-o'></i>
+					<span>15 May 2015</span>
+				</li>
+				<li>
+					<i class='fa fa-tags'></i>
+					<span>movies, best</span>
+				</li>
+			</ul>
+			<p class='text-info'>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+			</p>
+			<div class="read-more-block">
+				<button type='button'>Read More</button>
+			</div>
+		</div>
+		<div class="page-numeration">
+			<ul>
+				<li class='is-active'>
+					<a href>1</a>
+				</li>
+				<li>
+					<a href>2</a>
+				</li>
+				<li>
+					<a href>3</a>
+				</li>
+				<li>
+					<a href>4</a>
+				</li>
+				<li>
+					<a href><i class='fa fa-angle-right'></i></a>
+				</li>
+			</ul>
+		</div>
+		</section>
+		<aside class="sidebar">
+		<div class='search-input-block'>
+			<input type="text" placeholder='Search...'>
+			<i class='fa fa-search'></i>
+		</div>
+		<div class="title">Categories</div>
+		<ul class="categories-list">
+			<li>
+				<a href="#"><i class='fa fa-angle-right'></i>Comedy (10)</a>
+			</li>
+			<li>
+				<a href="#"><i class='fa fa-angle-right'></i>Family (4)</a>
+			</li>
+			<li>
+				<a href="#"><i class='fa fa-angle-right'></i>Adventure (8)</a>
+			</li>
+			<li>
+				<a href="#"><i class='fa fa-angle-right'></i>Drama (12)</a>
+			</li>
+			<li>
+				<a href="#"><i class='fa fa-angle-right'></i>Action (20)</a>
+			</li>
+		</ul>
+		<div class="title">Popular posts</div>
+		<ul class="popular-posts">
+			<li>
+				<img src="/images/popular-post.jpg" alt="Post Avatar">
+				<div>
+					<div class='post-title'>Most popular blog post</div>
+					<div class="post-credit">by <span>Ahmed Nasser</span></div>
+					<p class='post-text'>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+					</p>
+				</div>
+			</li>
+			<li>
+				<img src="/images/popular-post.jpg" alt="Post Avatar">
+				<div>
+					<div class='post-title'>Most popular blog post</div>
+					<div class="post-credit">by <span>Ahmed Nasser</span></div>
+					<p class='post-text'>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+					</p>
+				</div>
+			</li>
+			<li>
+				<img src="/images/popular-post.jpg" alt="Post Avatar">
+				<div>
+					<div class='post-title'>Most popular blog post</div>
+					<div class="post-credit">by <span>Ahmed Nasser</span></div>
+					<p class='post-text'>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+					</p>
+				</div>
+			</li>
+		</ul>
+		<div class="title">Advertisment</div>
+		<a href='#' class="ads-area">Ads. area 270 x 120</a>
+		<div class="title">Tags</div>
+		<ul class='tag-list'>
+			<li>Family</li>
+			<li>Action</li>
+			<li>Adventure</li>
+			<li>Drama</li>
+			<li>Adventure</li>
+			<li>Comedy</li>
+			<li>Action</li>
+			<li>Movie</li>
+		</ul>
+		<div class="title">Social media</div>
+		<ul class="social-media">
+			<li class='fb'>
+				<a href="http://fb.com"><i class='fa fa-facebook'></i></a>
+			</li>
+			<li class='tw'>
+				<a href="http://twitter.com"><i class='fa fa-twitter'></i></a>
+			</li>
+			<li class='youtube'>
+				<a href="http://youtube.com"><i class='fa fa-youtube-play'></i></a>
+			</li>
+			<li class='vk'>
+				<a href="http://vk.com"><i class='fa fa-vk'></i></a>
+			</li>
+		</ul>
+		<div class="title">Subscribe to our newsletter</div>
+		<div class="search-input-block">
+			<input type="text" placeholder='Email'>
+			<i class='fa fa-check'></i>
+		</div>
+		</aside>
+	</div>
+</div>
+
 
 <footer class="footer">
-<div class="container">
-	<div class="footer-text">all copyrights are reserved for aflam © 2015</div>
+	<div class="container">
 
-	<div class="footer-logo">
-	<ul class="footer-logo-list">
-		<li class="footer-logo-item">
-			<a class="footer-logo-link" href="" title="">
-				<img class="footer-logo-img" src="../images/sprite/bg.png" alt="smth-logo">
+		<nav class="footer-icons">
+			<a class="footer-icon fa-icon">
+				<i class="fa fa-rss" aria-hidden="true"></i>
 			</a>
-
-		</li>
-		<li class="footer-logo-item">
-			<a class="footer-logo-link" href="" title="">
-				<img class="footer-logo-img" src="../images/sprite/twitter.png" alt="twitter-logo">
+			<a class="footer-icon fa-icon">
+				<i class="fa fa-twitter" aria-hidden="true"></i>
 			</a>
-
-	</li>
-		<li class="footer-logo-item">
-			<a class="footer-logo-link" href="" title="">
-				<img class="footer-logo-img" src="../images/sprite/fb.png" alt="facebook-logo">
+			<a class="footer-icon fa-icon">
+				<i class="fa fa-facebook" aria-hidden="true"></i>
 			</a>
-
-	</li>
-	</ul>
-	</div>
+		</nav>
+		<p class="footer-text">all copyrights are reserved for aflam © 2015</p>
 	</div>
 </footer>
 

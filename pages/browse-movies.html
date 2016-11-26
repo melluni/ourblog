@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="../css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700i" rel="stylesheet">
 </head>
 <body>
 
@@ -11,20 +13,28 @@
 			<div class="container clearfix">
 				<div class="logo">
 					<figure class="logo-img">
-						<img src="../images/sprite/icon-1.png" alt="logo">
 					</figure>
 				</div>
-				<nav id="menu">
-					<ul class="main-menu">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#rowse_movies">Browse movies</a></li>
-						<li><a href="#blog">Blog</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
-						<li>
-						<img src="../images/sprite/icon-2.png" alt="search" class="search">
-						</li>
-					</ul>
+				<nav class="menu">
+						<a href="#home" class="menu-item">
+							Home
+						</a>
+						<a href="#browse_movies" class="menu-item">
+							Browse movies
+						</a>
+						<a href="#blog" class="menu-item">
+							Blog
+						</a>
+						<a href="#about" class="menu-item">
+							About
+						</a>
+						<a href="#contact" class="menu-item">
+							Contact
+						</a>
+						<a class="fa-icon menu-item">
+							<span>Search</span>
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</a>
 				</nav>
 			</div>
 </header>
@@ -68,20 +78,28 @@
 		</ul>
 	</div>
 </section>
+<div class="container">
 <ul class="movie-list">
 	<li class="movie-item movie-item--lucy">
 		<figure class="movie-img">
-			
+			<div class="tag">
+				<div class="fa-icon">
+					<i class="fa fa-tag"></i>
+				</div>
+				<p class="tags">
+					Action, Crime, Adventure
+				</p>
+			</div>
 		</figure>
 		<h4 class="movie-title">
 			Lucy - 2014
 		</h4>
 		<div class="movie-rating">
-			<span>&starf;</span>
-			<span>&starf;</span>
-			<span>&starf;</span>
-			<span>&starf;</span>
-			<span>&starf;</span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
 		</div>
 		<div class="movie-info">
 			<p class="movie-price">
@@ -109,17 +127,24 @@
 	</li>
 	<li class="movie-item movie-item--spiderman">
 		<figure class="movie-img">
-			
+			<div class="tag">
+				<div class="fa-icon">
+					<i class="fa fa-tag"></i>
+				</div>
+				<p class="tags">
+					Action, Crime, Adventure
+				</p>
+			</div>
 		</figure>
 		<h4 class="movie-title">
 			The amazing Spiderman
 		</h4>
 		<div class="movie-rating">
-			<span>&starf;</span>
-			<span>&starf;</span>
-			<span>&starf;</span>
-			<span>&starf;</span>
-			<span>&starf;</span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
 		</div>
 		<div class="movie-info">
 			<p class="movie-price">
@@ -144,17 +169,24 @@
 	</li>
 	<li class="movie-item movie-item--divergent">
 		<figure class="movie-img">
-			
+			<div class="tag">
+				<div class="fa-icon">
+					<i class="fa fa-tag"></i>
+				</div>
+				<p class="tags">
+					Action, Crime, Adventure
+				</p>
+			</div>
 		</figure>
 		<h4 class="movie-title">
 			Divergent - 2014
 		</h4>
 		<div class="movie-rating">
-			<span>&starf;</span>
-			<span>&starf;</span>
-			<span>&starf;</span>
-			<span>&starf;</span>
-			<span>&starf;</span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
 		</div>
 		<div class="movie-info">
 			<p class="movie-price">
@@ -182,17 +214,24 @@
 	</li>
 	<li class="movie-item movie-item--hunger-games">
 		<figure class="movie-img">
-			
+			<div class="tag">
+				<div class="fa-icon">
+					<i class="fa fa-tag"></i>
+				</div>
+				<p class="tags">
+					Action, Crime, Adventure
+				</p>
+			</div>
 		</figure>
 		<h4 class="movie-title">
 			The hunger games
 		</h4>
 		<div class="movie-rating">
-			<span>&starf;</span>
-			<span>&starf;</span>
-			<span>&starf;</span>
-			<span>&starf;</span>
-			<span>&starf;</span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
+			<span class="fa fa-star"></span>
 		</div>
 		<div class="movie-info">
 			<p class="movie-price">
@@ -219,34 +258,24 @@
 		</h5>
 	</li>
 </ul>
+</div>
 <!-- //= ../templates/blocks/pagination.html -->
 
 <footer class="footer">
-<div class="container">
-	<div class="footer-text">all copyrights are reserved for aflam © 2015</div>
+	<div class="container">
 
-	<div class="footer-logo">
-	<ul class="footer-logo-list">
-		<li class="footer-logo-item">
-			<a class="footer-logo-link" href="" title="">
-				<img class="footer-logo-img" src="../images/sprite/bg.png" alt="smth-logo">
+		<nav class="footer-icons">
+			<a class="footer-icon fa-icon">
+				<i class="fa fa-rss" aria-hidden="true"></i>
 			</a>
-
-		</li>
-		<li class="footer-logo-item">
-			<a class="footer-logo-link" href="" title="">
-				<img class="footer-logo-img" src="../images/sprite/twitter.png" alt="twitter-logo">
+			<a class="footer-icon fa-icon">
+				<i class="fa fa-twitter" aria-hidden="true"></i>
 			</a>
-
-	</li>
-		<li class="footer-logo-item">
-			<a class="footer-logo-link" href="" title="">
-				<img class="footer-logo-img" src="../images/sprite/fb.png" alt="facebook-logo">
+			<a class="footer-icon fa-icon">
+				<i class="fa fa-facebook" aria-hidden="true"></i>
 			</a>
-
-	</li>
-	</ul>
-	</div>
+		</nav>
+		<p class="footer-text">all copyrights are reserved for aflam © 2015</p>
 	</div>
 </footer>
 
