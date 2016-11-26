@@ -15,8 +15,25 @@
 		width: 30.8%
 	@include mobile
 		width: 47.5%
-
-
+	@include desktop
+		&:hover .tag
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			margin: auto
+			animation: fadeInDown 0.75s forwards
+		&:hover .movie-img:before
+		    position: absolute
+		    top: 0
+		    right: 0
+		    bottom: 0
+		    left: 0
+		    content: ''
+		    background-color: $primary-color
+		    opacity: 0.8
+		
 .movie-img 
 	width: 100%
 	padding-top: 100%
@@ -33,48 +50,7 @@
 			line-height: 40px
 			margin: 30% auto 5%
 		.tags
-			color: #ccc 
-		&:hover .tag
-			display: block
-			position: absolute
-			top: 0
-			left: 0
-			right: 0
-			margin: auto
-		&:hover:before
-		    position: absolute
-		    top: 0
-		    right: 0
-		    bottom: 0
-		    left: 0
-		    content: ''
-		    background-color: $primary-color
-		    opacity: 0.8;
-	@include desktop-large
-		.fa-icon
-			width: 40px
-			height: 40px
-			line-height: 40px
-			margin: 30% auto 5%
-		.tags
-			color: #ccc 
-		&:hover .tag
-			display: block
-			position: absolute
-			top: 0
-			left: 0
-			right: 0
-			margin: auto
-		&:hover:before
-		    position: absolute
-		    top: 0
-		    right: 0
-		    bottom: 0
-		    left: 0
-		    content: ''
-		    background-color: $primary-color
-		    opacity: 0.8;
-		
+			color: #ccc
 
 .movie-item--lucy
 	.movie-img
