@@ -1,41 +1,25 @@
-
-.contact__btn:after, .contact__form:after {
+.comment__btn:after, .comment__form:after {
   display: table;
   clear: both;
   overflow: hidden;
   content: '';
 }
 
-.contact {
-  background-color: $primary-color;
-}
-
-.contact__title {
+.comment__title {
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-style: italic;
-  color: #ffa820;
-  font-size: 30px;
-  text-align: center;
-  padding-top: 65px;
-  margin-bottom: 20px;
-}
-
-.contact__paragraph {
-  color: #ccc;
-  font-size: 13px;
   font-weight: 400;
-  font-family: 'Lato', sans-serif;
-  text-align: center;
-  padding-bottom: 50px;
+  color: #353564;
+  font-size: 25px;
+  line-height: 1.5;
+  padding-top: 65px;
+  margin-bottom: 25px;
 }
 
-.contact__form {
+.comment__form {
   padding-bottom: 70px;
-  margin: 0 15%;
 }
 
-.form__icon {
+.comment__icon {
   font-family: 'FontAwesome';
   color: #ccc;
   font-style: normal;
@@ -43,61 +27,45 @@
   font-size: 13px;
 }
 
-.form__icon-user:after {
+.comment__icon-user:after {
   position: absolute;
   content: "\f007";
   padding: 13px 0 0 15px;
 }
 
-.form__icon-tag:after {
-  position: absolute;
-  content: "\f02b";
-  padding: 13px 0 0 15px;
-}
-
-.form__icon-envelope:after {
+.comment__icon-envelope:before {
   position: absolute;
   content: "\f0e0";
   padding: 13px 0 0 15px;
 }
 
-.contact__input {
+.comment__input {
   background: none;
-  border: 2px solid #fff;
+  border: 2px solid #25254e;
   font-size: 13px;
   font-family: 'Lato', sans-serif;
   padding: 10px 0 10px 35px;
   box-sizing: border-box;
-  width: 30.33%;
+  width: 50%;
   margin-bottom: 20px;
   color: #ccc;
 }
 
-.contact__item {
-  &:nth-child(1) {
-    margin-right: 3.5%;
-  }
-  &:nth-last-child(3) {
-    margin-left: 3.5%;
-  }
-}
-
-.contact__text {
+.comment__text {
   background: none;
-  border: 2px solid #fff;
+  border: 2px solid #25254e;
   font-size: 13px;
   width: 100%;
-  padding: 8px 0 0 35px;
+  padding: 8px 0 8px 35px;
   margin-bottom: 20px;
   height: 250px;
   box-sizing: border-box;
   color: #ccc;
-  font-family: Lato, sans-serif;
 }
 
-.form__icon-pencil:after {
+.comment__icon-comment:before {
   position: absolute;
-  content: "\f044";
+  content: "\f075";
   padding: 11px 0 0 15px;
 }
 
@@ -108,14 +76,14 @@
 /* Firefox 19+ */
 /* Firefox 18- */
 
-.contact__btn {
-  width: 138px;
-  background-color: $accent-color;
+.comment__btn {
+  width: 270px;
+  background-color: #ffa820;
   border: none;
   font-size: 13px;
   font-weight: 400;
   font-family: 'Lato', sans-serif;
-  color: $primary-color;
+  color: #25254e;
   height: 50px;
   float: right;
 }
@@ -125,15 +93,24 @@
 }
 
 @media screen and (max-width: 767px) {
+  // .comment__input {
+  // 	width: 100%;
+  // }
   .contact__input {
-    width: 100%;
-  }
-  .contact__item {
     &:nth-child(1) {
       margin-right: 0;
     }
     &:nth-last-child(3) {
       margin-left: 0;
     }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .comment__input {
+    width: 100%;
+  }
+  .comment__btn {
+    width: 138px;
   }
 }
