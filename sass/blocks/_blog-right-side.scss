@@ -30,6 +30,15 @@
 			margin-bottom: 30px;
 		}
 	}
+
+	@media screen and (max-width: 768px) {
+		.blog-posts {
+			width: 100%;
+		}
+		.sidebar {
+			display: none;
+		}
+	}
 }
 
 .blog-post {
