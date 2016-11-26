@@ -83,15 +83,6 @@
     color: white;
     border-top: 2px solid transparent;
     
-    @include desktop-large
-    {
-        &:not(.fa-icon):hover
-        {
-            color: #ffa820;
-            border-top: 2px solid $accent-color;
-        }
-    }
-
     @include desktop
     {
         &:not(.fa-icon):hover
@@ -100,6 +91,7 @@
             border-top: 2px solid $accent-color;
         }
     }
+
     @include tablet
     {
         line-height: 100px;
@@ -109,6 +101,16 @@
         border: none;
     }
     @include mobile
+    {
+        line-height: 50px;
+
+        display: block;
+
+        margin: 0;
+
+        text-align: center;
+    }
+    @include mobile-small
     {
         line-height: 50px;
 
