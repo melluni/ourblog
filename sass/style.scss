@@ -12,6 +12,8 @@
 @import "blocks/_preview.sass";
 @import "blocks/filter.sass";
 @import "blocks/_movie-list.sass";
+@import "blocks/_movie_info.scss";
+@import "blocks/_movie-reviews.scss";
 @import "blocks/_movie-cast.scss";
 
 @import "components/_button.scss";
@@ -19,4 +21,4 @@
 @import "fa/_font-awesome.scss";
 @import "../fonts/font.sass";
 @import "blocks/_contact-us.scss";
-@import "blocks/_footer.scss"
+@import "blocks/_footer.scss";
