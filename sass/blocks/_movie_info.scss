@@ -1,0 +1,246 @@
+.clearfix:after {
+		content: "";
+		clear: both;
+		display: table;
+		overflow: hidden;
+}
+
+.movie-trailer {
+	background-image: url(../images/movie_info/spiderman_back.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	background-color: #000;
+	position: relative;
+	padding-top: 180px;
+	box-sizing: border-box;
+	z-index: -1;
+	margin-top: -7px;
+	margin-bottom: -7px;
+}
+
+.movie-trailer:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(37,37,78, 0.5);
+	z-index: 0;
+}
+
+.movie-trailer-wrap {
+	text-align: justify;
+	position: relative;
+	z-index: 1;
+}
+
+.movie-trailer-wrap:after {
+	width: 100%;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    content: '';
+    display: inline-block;
+}
+
+.play-button-wrap {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.play-button {
+	width: 100px;
+	height: 100px;
+	-webkit-border-radius: 100%;
+	        border-radius: 100%;
+	border: 2px solid #fff;
+	text-align: center;
+	line-height: 100px;
+	color: #FFF;
+	font-size: 30px;
+}
+
+.play-button-wrap p {
+	text-align: center;
+	font: $base-font;
+	font-size: 30px;
+	margin-top: 15px;
+	color: #FFF;
+}
+
+.arrow {
+	display: inline-block;
+	font-size: 20px;
+	opacity: 0.6;
+	height: 50px;
+	width: 50px;
+	background-color: $accent-color;
+	text-align: center;
+	line-height: 50px;
+	z-index: 1;
+	vertical-align: middle;
+}
+
+.movie-description {
+	z-index: 0;
+	background-color: #FFF;
+}
+
+.movie-photo-column {
+	width: 40%;
+	margin-right: 5%;
+	float: left;
+}
+
+.movie-photo-column img {
+	margin-top: -100px;
+}
+
+.movie-description-column {
+	width: 55%;
+	float: left;
+}
+
+.buying-information-buttons-column {
+	width: 45%;
+	float: left;
+}
+
+.buying-information-wrap {
+	margin-top: 90px;
+}
+
+.buying-information-column {
+	float: left;
+	width: 55%;
+	padding-right: 30px;
+	box-sizing: border-box;
+}
+
+.buying-information-title {
+	color: $accent-color;
+	font-size: 24px;
+	font: $base-font;
+	font-style: italic;
+	margin-bottom: 20px;
+}
+
+.release-date {
+	font-size: 13px;
+	color: #676767;
+	font: $base-font;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.tag-icon {
+	display: inline-block;
+	background-color: #03bb4d;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	margin-right: 20px;
+}
+
+.tag-wrap {
+	margin-bottom: 20px;
+}
+
+.tag-wrap span {
+	display: inline-block;
+	font-size: 13px;
+	color: #676767;
+}
+
+.movie-price-wrap {
+	margin-bottom: 25px;
+}
+
+.movie-price-wrap .movie-price {
+	display: inline-block;
+	float: none;
+	vertical-align: middle;
+}
+
+.movie-price-wrap .old-movie-price {
+	display: inline-block;
+	font-size: 20px;
+	color: #ccc;
+	margin-left: 20px;
+	vertical-align: middle;
+	position: relative;
+}
+
+.movie-price-wrap .old-movie-price:after {
+	content: '';
+	display: block;
+	height: 2px;
+	position: absolute;
+	width: 120%;
+	background-color: #ccc;
+	left: -10%;
+	bottom: 40%;
+}
+
+.rating {
+	color: $accent-color;
+}
+
+.fa-star-none {
+	color: #ccc;
+}
+
+.quality-wrap {
+	margin-top: 20px;
+}
+
+.buying-information-buttons-column .button {
+	width: 100%;
+	height: 50px;
+	color: #25254e;
+	font-size: 15px;
+}
+
+.button.add-to-cart {
+	background-color: $accent-color;
+	margin-bottom: 20px;
+}
+
+.button.add-to-collection {
+	background-color: #eee;
+}
+
+.synopsis-title {
+	font: $base-font;
+	font-size: 25px;
+	color: #25254e;
+	margin: 40px 0 20px;
+
+}
+
+.synopsis-text {
+	font: $base-font;
+	font-size: 13px;
+	color: #676767;
+	line-height: 22px;
+}
+
+.reviews_cast_container {
+  margin-top: 40px;
+  margin-bottom: 65px;
+  position: relative;
+}
+
+.similar_movies_section {
+	background-color: $primary-color;
+	padding-bottom: 65px;
+}
+
+.similar_movies_section .movie-price {
+	color: #fff;
+}
