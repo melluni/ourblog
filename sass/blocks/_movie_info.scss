@@ -14,9 +14,20 @@
 	position: relative;
 	padding-top: 180px;
 	box-sizing: border-box;
-	z-index: -1;
-	margin-top: -7px;
-	margin-bottom: -7px;
+	z-index: 0;
+}
+
+@include tablet {
+	.movie-trailer {
+		height: 300px;
+		padding-top: 80px;
+	}
+}
+
+@include mobile {
+	.movie-trailer {
+	display: none;
+}
 }
 
 .movie-trailer:before {
@@ -34,7 +45,7 @@
 .movie-trailer-wrap {
 	text-align: justify;
 	position: relative;
-	z-index: 1;
+	z-index: 0;
 }
 
 .movie-trailer-wrap:after {
@@ -70,6 +81,11 @@
 	margin-top: 15px;
 	color: #FFF;
 }
+.play-button:hover {
+	color: $accent-color;
+	border-color: $accent-color;
+	cursor: pointer;
+}
 
 .arrow {
 	display: inline-block;
@@ -84,9 +100,28 @@
 	vertical-align: middle;
 }
 
+.arrow:hover {
+	color: #fff;
+	cursor: pointer;
+}
+
 .movie-description {
-	z-index: 0;
+	z-index: 2;
+	position: relative;
 	background-color: #FFF;
+}
+
+@include tablet {
+	.movie-description-wrap {
+	margin-top: 30px;
+	}
+}
+
+
+@include mobile {
+	.movie-description-wrap {
+	margin-top: 15px;
+	}
 }
 
 .movie-photo-column {
@@ -95,8 +130,35 @@
 	float: left;
 }
 
+@include mobile {
+
+.movie-photo-column {
+	width: 100%;
+	margin-right: 0;
+	margin-top: 30px;
+	float: none;
+	text-align: center;
+}
+
+}
+
 .movie-photo-column img {
 	margin-top: -100px;
+}
+
+@include tablet {
+	.movie-photo-column img {
+	margin-top: 0;
+	}
+}
+
+@include mobile {
+
+	.movie-photo-column img {
+	margin: 0;
+	width: 50%;
+	}
+
 }
 
 .movie-description-column {
@@ -104,13 +166,45 @@
 	float: left;
 }
 
+@include mobile {
+
+	.movie-description-column {
+	float: none;
+	width: 100%;
+	margin-top: 30px;
+	}
+
+}
+
 .buying-information-buttons-column {
 	width: 45%;
 	float: left;
 }
 
+@include mobile {
+
+	.buying-information-buttons-column {
+	margin-top: 30px;
+	float: none;
+	width: 100%;
+	}
+
+}
+
 .buying-information-wrap {
 	margin-top: 90px;
+}
+
+@include tablet {
+	.buying-information-wrap {
+	margin-top: 0;
+	}
+}
+
+@include mobile {
+	.buying-information-wrap {
+	margin-top: 0;
+	}
 }
 
 .buying-information-column {
@@ -118,6 +212,15 @@
 	width: 55%;
 	padding-right: 30px;
 	box-sizing: border-box;
+}
+
+@include mobile {
+
+	.buying-information-column {
+	float: none;
+	width: 100%;
+	}
+
 }
 
 .buying-information-title {
@@ -211,8 +314,35 @@
 	margin-bottom: 20px;
 }
 
+.button.add-to-cart:hover {
+	background-color: #f49808;
+}
+
 .button.add-to-collection {
 	background-color: #eee;
+}
+
+.button.add-to-collection:hover {
+	background-color: #d4d4d4;
+}
+
+.synopsis {
+	width: 55%;
+	float: right;
+}
+
+@include tablet {
+	.synopsis {
+	width: 100%;
+	float: none;
+}
+}
+
+@include mobile {
+	.synopsis {
+	width: 100%;
+	float: none;
+}
 }
 
 .synopsis-title {
@@ -236,11 +366,51 @@
   position: relative;
 }
 
+@include mobile {
+
+.reviews_cast_container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+}
+
+@include tablet {
+
+.reviews_cast_container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+}
+
 .similar_movies_section {
 	background-color: $primary-color;
 	padding-bottom: 65px;
 }
 
-.similar_movies_section .movie-price {
+@include mobile {
+
+.similar_movies_section .section-title {
+	padding-top: 30px;
+}
+.similar_movies_section .caption {
+	padding-bottom: 30px;
+}
+}
+
+@include tablet {
+
+.similar_movies_section .section-title {
+	padding-top: 30px;
+}
+.similar_movies_section .caption {
+	padding-bottom: 30px;
+}
+}
+
+.similar_movies_section .movie-price,
+.similar_movies_section .movie-title {
 	color: #fff;
+	font-weight: 200;
 }

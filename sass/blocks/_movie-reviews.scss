@@ -8,6 +8,28 @@
   box-sizing: border-box;
 }
 
+@include tablet {
+
+.movie-reviews {
+  float: none;
+  width: 100%;
+  margin-right: 0;
+  margin-top: 30px;
+}
+
+}
+
+@include mobile {
+
+.movie-reviews {
+  float: none;
+  width: 100%;
+  margin-right: 0;
+  margin-top: 30px;
+}
+
+}
+
 .movie-reviews-item {
   margin-bottom: 20px;
 }
@@ -41,6 +63,22 @@
   margin: 20px 0;
 }
 
+@include mobile {
+
+.movie-reviews-name {
+  margin: 0 0;
+}
+
+}
+
+// @include tablet {
+
+// .movie-reviews-name {
+//   margin: 0 0;
+// }
+
+// }
+
 .movie-reviews-profession {
   color: #ffa820;
   font-size: 13px;
@@ -54,4 +92,15 @@
 
 .review-rating {
   margin-left: 20px;
+}
+
+@include mobile {
+
+.review-rating {
+  display: block;
+  padding-top: 5px;
+  margin-left: 0;
+  margin-bottom: 5px;
+}
+
 }
