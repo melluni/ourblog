@@ -2,9 +2,10 @@
   padding: 33px 33px 13px;
   background-color: #f7f7f7;
   float: left;
-  width: 50%;
-  margin-right: 5%;
+  width: 57%;
+  margin-right: 3%;
   font: $base-font;
+  box-sizing: border-box;
 }
 
 .movie-reviews-item {
@@ -20,18 +21,18 @@
 
 .movie-reviews-item-photo-column {
   float: left;
-  width: 10%;
+  width: 12%;
   margin-right: 4%;
 }
 
 .movie-reviews-item-photo-column img {
-  width: 60px;
-  height: 60px;
+  width: 100%;
+  max-width: 60px;
 }
 
 .movie-reviews-item-text-column {
   float: left;
-  width: 86%;
+  width: 84%;
 }
 
 .movie-reviews-name {
