@@ -6,13 +6,13 @@
 
     background-color: $primary-color--footer;
 
-    @include tablet
-    {
-        padding: 10px 0 2px;
-    }
+    // @include tablet
+    // {
+    //     padding: 20px 0px 10px;
+    // }
     @include mobile
     {
-        padding: 10px 0 2px;
+        padding: 20px 0 10px;
     }
 }
 
@@ -30,12 +30,13 @@
 
         text-align: center;
     }
-    @include tablet
-    {
-        margin: 0 auto;
+    // @include tablet
+    // {
+    //     margin: 0 auto;
 
-        text-align: center;
-    }
+    //     text-align: center;
+        
+    // }
 }
 
 .footer-icons
@@ -50,18 +51,22 @@
 
         text-align: center;
     }
-    @include tablet
+    // @include tablet
+    // {
+    //     float: none;
+
+    //     margin: 0 auto;
+
+    //     text-align: center;
+    // }
+    .footer-icon
     {
-        float: none;
+        margin-left: 10px;
 
-        margin: 0 auto;
-
-        text-align: center;
+        list-style: none;
+        
+        color: $primary-color;
+        
+        background-color: $accent-color;
     }
-.footer-icon
-{
-    margin-left: 10px;
-
-    list-style: none;
-}
 }
