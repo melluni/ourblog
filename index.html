@@ -4,12 +4,52 @@
     <meta charset="UTF-8">
     <title>Pages</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: #dedede;
+        }
+
+        .grid { /* Masonry container */
+            column-count: 4;
+            column-gap: 1em;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .grid-item { /* Masonry bricks or child elements */
+            background-color: #eee;
+            display: inline-block;
+            margin: 0 0 1em;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <nav class="row preview-list">
-            <a class="col-4" href="pages/home.html">
-                <img src="pic/design/01_Homepage.jpg" alt="">
+        <nav class="grid">
+            <a href="pages/home.html" class="grid-item grid-item--narrow">
+                <img src="images/preview/home.png" alt="home.html" title="home.html">
+            </a>
+            <a href="pages/browse-movies.html" class="grid-item grid-item--narrow">
+                <img src="images/preview/browse-movies.png" alt="" title="browse-movies.html">
+            </a>
+            <a href="pages/movie_info.html" class="grid-item grid-item--wide">
+                <img src="images/preview/movie-info.png" alt="" title="movie_info.html">
+            </a>
+            <a href="pages/BlogRightSide.html" class="grid-item">
+                <img src="images/preview/BlogRightSide.png" alt="" title="BlogRightSide.html">
+            </a>
+            <a href="pages/single-block.html" class="grid-item">
+                <img src="images/preview/single-block.png" alt="" title="single-block.html">
+            </a>
+            <a href="#" class="grid-item grid-item--narrow">
+                <img src="images/preview/popup.png" alt="" title="popup.html">
+            </a>
+            <a href="pages/contact.html" class="grid-item grid-item--narrow">
+                <img src="images/preview/contact.png" alt="" title="contact.html">
+            </a>
+            <a href="pages/404.html" class="grid-item grid-item--wide">
+                <img src="images/preview/404.png" alt="" title="404.html">
             </a>
         </nav>
     </div>
