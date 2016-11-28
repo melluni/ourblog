@@ -1,0 +1,77 @@
+.subscribe form {
+  width: 45%;
+  float: right;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+.email_field {
+  border: 2px solid white;
+  color: white;
+  height: 60px;
+  font-size: 13px;
+  padding-left: 24px;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.subscribe h3, .reviews_slider h3 {
+  color: $accent-color;
+  font-size: 20px;
+  font-style: italic;
+  float: left;
+  margin-right: 60px;
+  line-height: 60px;
+}
+
+.subscribe-icon {
+  width: 19%;
+  height: 60px;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #25254e;
+  line-height: 60px;
+  margin-top: -10px;
+  margin-left: -2px;
+}
+
+.subscribe {
+  width: 100%;
+  background: $primary-color;
+  vertical-align: middle;
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 90px 15px 140px;
+  }
+}
+
+@include mobile {
+
+  .subscribe {
+
+    p, form {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .subscribe-icon {
+    max-width: 70px;
+  }
+
+  .subscribe .container {
+    padding: 40px 15px 190px;
+  }
+
+}
+
+
+
+
+
+
+
+

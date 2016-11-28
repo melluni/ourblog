@@ -6,13 +6,18 @@
 @import "_icon.scss";
 @import "_animations.scss";
 @import "fa/_font-awesome.scss";
-@import "../fonts/font.sass";
+@import "../fonts/_font.sass";
 
 @import "_layout.scss";
 // @import "blocks/_index.scss";
 @import "blocks/_preview.sass";
-@import "blocks/filter.sass";
+@import "blocks/_video.scss";
+@import "blocks/_reviews.scss";
+@import "blocks/_subscribe.scss";
+@import "blocks/_filter.sass";
 @import "blocks/_movie-list.sass";
+@import "blocks/_movie_info.scss";
+@import "blocks/_movie-reviews.scss";
 @import "blocks/_movie-cast.scss";
 
 @import "components/_button.scss";
@@ -22,9 +27,8 @@
 @import "blocks/_contact-us.scss";
 @import "blocks/_form-comment.scss";
 
-@import "../fonts/font.sass";
+// @import "../fonts/_font.sass";
 @import "blocks/_contact-us.scss";
 @import "blocks/_footer.scss";
-@import "blocks/blog-header";
-@import "blocks/blog-right-side";
-
+@import "blocks/_blog-header";
+@import "blocks/_blog-right-side";
