@@ -52,7 +52,7 @@
   }
 }
 
-@include desktop {
+@media screen and (max-width: 1024px) {
   .review_text {
     padding: 2%;
     width: 90%;
@@ -83,7 +83,7 @@
     margin-top: 10px;
   }
   .review_container {
-    margin-top: -20px;
+    margin-top: -10px;
   }
 }
 
