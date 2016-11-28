@@ -6,9 +6,14 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="../css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700i" rel="stylesheet">
+	<style>
+		video {
+		  width: 100%;
+		  height: auto;
+		}
+	</style>
 </head>
 <body>
-
 <header class="header">
 			<div class="container clearfix">
 				<div class="logo">
@@ -38,8 +43,6 @@
 				</nav>
 			</div>
 </header>
-
-
 <div class='blog-header'>
 	<div class="container">
 		<h2>Our blog, That’s our latest News</h2>
@@ -50,7 +53,6 @@
 		</div>
 	</div>
 </div>
-
 <div class="blog-right-side container">
 	<div class="row">
 		<section class="blog-posts">
@@ -275,16 +277,20 @@
 				<a href="http://vk.com"><i class='fa fa-vk'></i></a>
 			</li>
 		</ul>
-		<div class="title">Subscribe to our newsletter</div>
-		<div class="search-input-block">
-			<input type="text" placeholder='Email'>
-			<i class='fa fa-check'></i>
-		</div>
+		<section class="subscribe">
+			<div class="container">
+				<h3>Subscribe to our newsletter</h3>
+				<form>
+					<input class="email_field" type="text" placeholder="email" name="email">
+					<a class="subscribe-icon fa-icon">
+						<i class="fa fa-paper-plane" aria-hidden="true"></i>
+					</a>
+				</form>
+			</div>
+		</section>
 		</aside>
 	</div>
 </div>
-
-
 <footer class="footer">
 	<div class="container">
 
@@ -302,6 +308,5 @@
 		<p class="footer-text">all copyrights are reserved for aflam © 2015</p>
 	</div>
 </footer>
-
 </body>
 </html>
