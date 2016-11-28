@@ -31,8 +31,10 @@
   font-size: 14px;
   color: #25254e;
   line-height: 60px;
-  margin-top: -10px;
-  margin-left: -2px;
+  // position:relative;
+  // top: -2px; /for safari, check for chrome, around 10/
+  float:right;
+  margin-left: -5px;
 }
 
 .subscribe {
@@ -53,7 +55,7 @@
   .subscribe {
 
     p, form {
-      float: none;
+      // float: none;
       width: 100%;
     }
   }
@@ -65,7 +67,13 @@
   .subscribe .container {
     padding: 40px 15px 190px;
   }
-
+  .email_field {
+    width: 80%;
+  }
+  .subscribe-icon {
+    width:20%;
+    max-width: 20%;
+  }
 }
 
 
