@@ -1,16 +1,33 @@
 .movie-list
 	font-size: 0
 	margin: 0 -15px
-	text-align: center
+	text-align: right
+	&:not(.movie-list--slider)
+		text-align: center
+		margin: 100px 0 75px
+		.movie-item
+			width: 22.5%
+			padding: 1.25%
+			margin: 0
+			@include tablet
+				width: 30.8%
+			@include mobile
+				width: 47.5%
+			@include mobile-small
+				width: 100%
+.movie-list + .page-numeration
+	padding-left: 15px
+	margin-bottom: 100px
 
 .movie-item
-	width: 22.5%
-	padding: 1.25%
+	// width: 22.5%
+	// padding: 0.05%
 	display: inline-block
 	color: #25254e
 	font-size: 20px
 	font-family: $base-font
 	vertical-align: top
+	margin: 0 15px
 	@include tablet
 		width: 30.8%
 	@include mobile
@@ -40,6 +57,7 @@
 	background-size: contain
 	background-position: 50%
 	position: relative
+	text-align: center
 	.tag
 		display: none
 		font-size: 13px
